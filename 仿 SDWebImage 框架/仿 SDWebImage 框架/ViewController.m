@@ -20,9 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //创建自定义的操作对象
-                                                                                                                                                         
+    
     
     self.queue = [[NSOperationQueue alloc]init];
+    
     
     //把自定义的操作对象添加到队列
     
