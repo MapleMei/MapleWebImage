@@ -28,8 +28,29 @@
     //把自定义的操作对象添加到队列
     
     MapleDownloaderOperation * op = [[MapleDownloaderOperation alloc]init];
+    //把图片的地址传递给 op
     
+    op.urlString = @"http://pic49.nipic.com/file/20140928/4949133_154705706000_2.jpg";
     
+    //把下载完成之后刷新 UI 的代码块传递给 op
+    
+    //定义执行的代码块
+//    void(^successBlock)() = ^(UIImage * image){
+//    
+//    
+//        NSLog(@"%@,,,,%@",image,[NSThread currentThread]);
+//    
+//    
+//    };
+//
+    
+//    op.successBlock =successBlock;
+    
+    //调用 block
+    [op setSuccessBlock:^(UIImage *image) {
+        
+         NSLog(@"%@,,,,%@",image,[NSThread currentThread]);
+    }];
     //添加到队列
     
     [self.queue addOperation:op];
