@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import  "MapleDownloaderOperation.h"
 
 @interface ViewController ()
+
+@property(nonatomic,strong)NSOperationQueue * queue;
 
 @end
 
@@ -16,6 +19,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //创建自定义的操作对象
+                                                                                                                                                         
+    
+    self.queue = [[NSOperationQueue alloc]init];
+    
+    //把自定义的操作对象添加到队列
+    
+    MapleDownloaderOperation * op = [[MapleDownloaderOperation alloc]init];
+    
+    
+    //添加到队列
+    
+    [self.queue addOperation:op];
+    
+    
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -13,6 +13,7 @@
 		C68728791D8D356F006E719A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68728771D8D356F006E719A /* Main.storyboard */; };
 		C687287B1D8D356F006E719A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C687287A1D8D356F006E719A /* Assets.xcassets */; };
 		C687287E1D8D356F006E719A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C687287C1D8D356F006E719A /* LaunchScreen.storyboard */; };
+		C68728881D8D36D4006E719A /* MapleDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C68728871D8D36D4006E719A /* MapleDownloaderOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C687287A1D8D356F006E719A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C687287D1D8D356F006E719A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C687287F1D8D356F006E719A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68728861D8D36D4006E719A /* MapleDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapleDownloaderOperation.h; sourceTree = "<group>"; };
+		C68728871D8D36D4006E719A /* MapleDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapleDownloaderOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		C687286D1D8D356F006E719A /* 仿 SDWebImage 框架 */ = {
 			isa = PBXGroup;
 			children = (
+				C68728851D8D36AC006E719A /* MapleWebImage */,
 				C68728711D8D356F006E719A /* AppDelegate.h */,
 				C68728721D8D356F006E719A /* AppDelegate.m */,
 				C68728741D8D356F006E719A /* ViewController.h */,
@@ -77,6 +81,15 @@
 				C687286F1D8D356F006E719A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C68728851D8D36AC006E719A /* MapleWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				C68728861D8D36D4006E719A /* MapleDownloaderOperation.h */,
+				C68728871D8D36D4006E719A /* MapleDownloaderOperation.m */,
+			);
+			path = MapleWebImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68728881D8D36D4006E719A /* MapleDownloaderOperation.m in Sources */,
 				C68728761D8D356F006E719A /* ViewController.m in Sources */,
 				C68728731D8D356F006E719A /* AppDelegate.m in Sources */,
 				C68728701D8D356F006E719A /* main.m in Sources */,
